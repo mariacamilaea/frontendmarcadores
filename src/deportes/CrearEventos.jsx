@@ -8,7 +8,7 @@ import Card from 'react-bootstrap/Card';
 
 
 //const URI = 'http://localhost:8000/usuarios/regevento'
-const URI = 'https://app-g51gh.herokuapp.com/usuarios/regevento'
+const URI = 'https://marcadores-deportivos.herokuapp.com/usuarios/regevento'
 export const CompCreateEvento = () => {
  
     const [fecha, setFecha] = useState('')

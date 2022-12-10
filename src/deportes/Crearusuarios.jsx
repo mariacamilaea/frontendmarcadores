@@ -9,7 +9,7 @@ import Card from 'react-bootstrap/Card';
 //import '../style.css';
 
 //const URI = 'http://localhost:8000/usuarios/reguser'
-const URI = ' https://app-g51gh.herokuapp.com/usuarios/reguser'
+const URI = ' https://marcadores-deportivos.herokuapp.com/usuarios/reguser'
 export const CompCreateUser = () => {
 
    

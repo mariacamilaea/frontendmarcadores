@@ -1,10 +1,15 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
+import Card from 'react-bootstrap/Card';
 //Ruta para modificar "Actualizar" el evento
-const URI = 'http://localhost:8000/usuarios/upevento/'
-//Ruta para mostra la información del evento deportivo antes de modificarlo
-const URI2 = 'http://localhost:8000/usuarios/shevento/'
+//const URI = 'http://localhost:8000/usuarios/upevento/'
+const URI = 'https://marcadores-deportivos.herokuapp.com/usuarios/upevento/'
+//Ruta para mostrar la información del evento deportivo antes de modificarlo
+//const URI2 = 'http://localhost:8000/usuarios/shevento/'
+const URI2 = 'https://marcadores-deportivos.herokuapp.com/usuarios/shevento/'
 
 export const CompEditEvento = () => {
     const [fecha, setFecha] = useState('')    
@@ -47,9 +52,11 @@ export const CompEditEvento = () => {
         getBlogById()
      },[ ] )
     return (
-        <div>
+        <div className="login-form">
         <h3>Editar Eventos Deportivos</h3>
-        <form>
+        <Card>
+        <Card.Body>
+        <Form>
                 <div>
                 <label >Fecha</label>
                 <input
@@ -105,8 +112,10 @@ export const CompEditEvento = () => {
                                        
                 />
             </div>          
-            <button type="submit" onClick={onSubmit} >Actualizar</button>
-        </form>
+            <Button type="submit" onClick={onSubmit} >Actualizar</Button>
+        </Form>
+        </Card.Body>
+        </Card>
     </div>
     )
 

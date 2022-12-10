@@ -9,10 +9,10 @@ import Swal from 'sweetalert2';
 //importar nuestras rutas del backend
 //importar los eventos deportivos
 //const URI = 'http://localhost:8000/usuarios/shevento/'
-const URI = 'https://app-g51gh.herokuapp.com/usuarios/shevento/'
+const URI = 'https://marcadores-deportivos.herokuapp.com/usuarios/shevento/'
 //eliminar un evento deportivo
 //const URI2 = 'http://localhost:8000/usuarios/delevento/'
-const URI2 = 'https://app-g51gh.herokuapp.com/usuarios/delevento/'
+const URI2 = 'https://marcadores-deportivos.herokuapp.com/usuarios/delevento/'
 //procedimientos para mostrar los eventos deportivos
 export const CompMostrarEvento = () => {
 
